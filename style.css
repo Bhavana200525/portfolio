@@ -1,0 +1,131 @@
+/* Global Styles */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: whitesmoke;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: rgb(240, 9, 9);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #270fc4;
+}
+
+/* Layout */
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgb(31, 205, 8);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.download-link {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+/* Resume Sections */
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.resume-section h2 {
+  border-bottom: 2px dashed #e0e0e0;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Project Items */
+.project-item {
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+.project-item img {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.download-report {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+/* Work Experience */
+.work-section {
+  margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.socials img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-item img {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .download-link {
+    position: static;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
